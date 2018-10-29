@@ -1,4 +1,5 @@
 #!/bin/bash
+#!/bin/bash
 set -x
 
 download_folder=/opt
@@ -15,3 +16,8 @@ download_url=${maven_url}/${maven_binary_file}
 wget -q  -O  ${download_folder}/${maven_binary_file}  ${download_url}
 
 tar -zxf  ${download_folder}/${maven_binary_file} -C  ${download_folder}
+
+
+echo "export M2_HOME=${download_folder}/apache-maven-${maven_version}" >>/etc/profile.d/maven.sh
+echo "export PATH=$PATH:$M2_HOME/bin">>/etc/profile.d/maven.sh
+
