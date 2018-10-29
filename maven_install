@@ -1,0 +1,17 @@
+#!/bin/bash
+set -x
+
+download_folder=/opt
+maven_version=3.5.4
+
+#url="http://archive.apache.org/dist/maven/maven-`echo $maven_version|sed 's/\.[0-9]*//g'`/${maven_version}/binaries"
+
+maven_url="http://archive.apache.org/dist/maven/maven-`echo $maven_version|sed 's/\.[0-9]*//g'`/${maven_version}/binaries/"
+
+maven_binary_file="apache-maven-${maven_version}-bin.tar.gz"
+
+download_url=${maven_url}/${maven_binary_file}
+
+wget -q  -O  ${download_folder}/${maven_binary_file}  ${download_url}
+
+tar -zxf  ${download_folder}/${maven_binary_file} -C  ${download_folder}
