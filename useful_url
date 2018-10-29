@@ -1,2 +1,8 @@
 jenkins
 https://www.theserverside.com/tutorial/Need-a-CI-tool-Heres-a-Jenkins-tutorial-for-beginners
+
+
+jenkins and plugins installation wtih shell script
+
+https://github.com/mdichirico/public-shell-scripts/blob/master/setup-jenkins-on-cent-os-7.sh
+
