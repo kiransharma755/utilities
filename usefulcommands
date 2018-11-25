@@ -1,0 +1,8 @@
+
+22
+down vote
+I'd like to share that Ansible can be run on localhost via shell:
+
+ansible all -i "localhost," -c local -m shell -a 'echo hello world'
+
+This could be helpful for simple tasks or for some hands-on learning of Ansible.
