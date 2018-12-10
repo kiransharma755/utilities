@@ -1,0 +1,8 @@
+
+how to mount existing volume in ec12
+
+list volume with lsblk 
+do the following tomouth 
+
+/dev/xvdf /mount_point(directory) -t xfs 
+
