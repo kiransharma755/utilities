@@ -8,3 +8,7 @@ https://github.com/mdichirico/public-shell-scripts/blob/master/setup-jenkins-on-
 
 collection of playbook/roles
 https://github.com/adithyakhamithkar/ansible-playbooks/blob/master/roles/build-docker-image/tasks/main.yml
+
+
+ldap tutorials
+https://www.howtoforge.com/linux_openldap_setup_server_client
