@@ -20,3 +20,10 @@ resource "aws_s3_bucket" "tf_state" {
 
 
 prevent_destroy =true while creating. When deleting, or destroying, need to put false
+
+
+deleting versioned s3 bucket
+
+aws s3api list-object-versions --bucket tfstatek |findstr "VersionId"
+aws s3api delete-object --bucket bucketname --key bucketname --version-id "version-id from above"
+
