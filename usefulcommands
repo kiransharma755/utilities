@@ -6,3 +6,11 @@ I'd like to share that Ansible can be run on localhost via shell:
 ansible all -i "localhost," -c local -m shell -a 'echo hello world'
 
 This could be helpful for simple tasks or for some hands-on learning of Ansible.
+
+This also works. 
+ ansible-playbook   -i "localhost," -c local test.yml
+ 
+ The playbook has 127.0.0.1 in hosts. 
+ 
+ But if we omit -i "localhost," it complains 
+ 
