@@ -1,3 +1,0 @@
-yum install -y git
-git config --global user.name "Kiran Sharma"
-git config --global user.email "kiransharma2016@gmail.com"

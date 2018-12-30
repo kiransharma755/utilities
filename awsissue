@@ -1,8 +1,0 @@
-
-how to mount existing volume in ec2
-
-list volume with lsblk 
-do the following to mount
-
-/dev/xvdf /mount_point(directory) -t xfs 
-
