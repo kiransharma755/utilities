@@ -12,3 +12,9 @@ https://github.com/adithyakhamithkar/ansible-playbooks/blob/master/roles/build-d
 
 ldap tutorials
 https://www.howtoforge.com/linux_openldap_setup_server_client
+
+
+
+playbook for kubernetes cluster with kubeadm
+
+https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-1-10-cluster-using-kubeadm-on-ubuntu-16-04
