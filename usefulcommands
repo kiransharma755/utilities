@@ -3,3 +3,9 @@ cat file |sed '/[0-9]/d' |sed 's/\r//g'|tr -d '\n\r' >file1
 cat file1|fold -s -w80  >file2
 
 
+What you want does fold:
+
+fold -s -w80 file
+-s: tells fold to break only at spaces
+-w80: declared the width
+fold: also reads from stdin: echo "..." | fold -s -w80
